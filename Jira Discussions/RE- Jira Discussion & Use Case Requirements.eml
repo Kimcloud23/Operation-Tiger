@@ -1,0 +1,1038 @@
+From: Mpho Komanyane <mpho.komanyane@ahead.com>
+To: Matt Sweetnam <Matt.Sweetnam@ahead.com>, Karthica Subramania
+	<karthica.subramania@ahead.com>, John Knowles <john.knowles@ahead.com>, Jewel
+ English <jewel.english@ahead.com>, Emma Birdsong <emma.birdsong@ahead.com>,
+	Sam Gangopadhyay <soumava.gangopadhyay@ahead.com>, Will Fothergill
+	<will.fothergill@ahead.com>
+CC: Cooper Lutz <Cooper.Lutz@ahead.com>, Nick Colyer <Nick.Colyer@ahead.com>
+Subject: RE: Jira Discussion & Use Case Requirements
+Thread-Topic: Jira Discussion & Use Case Requirements
+Thread-Index: AdqQMtU2eF65ugBqStmOrQ59MUmrVgGOU6JAAAbQo1AD+hwacA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Wed, 15 May 2024 02:41:06 +0000
+Message-ID:
+	<CH0PR10MB529112266C3C49D21B62324F9DEC2@CH0PR10MB5291.namprd10.prod.outlook.com>
+References:
+	<CH0PR10MB529196E05D7B067D12C341319D102@CH0PR10MB5291.namprd10.prod.outlook.com>
+ <CH0PR10MB54976FDF747B6F098E82D44DEC102@CH0PR10MB5497.namprd10.prod.outlook.com>
+In-Reply-To:
+	<CH0PR10MB54976FDF747B6F098E82D44DEC102@CH0PR10MB5497.namprd10.prod.outlook.com>
+Content-Language: en-US
+X-Mentions: Matt.Sweetnam@ahead.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/related;
+	boundary="_004_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_004_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_"
+
+--_000_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_
+Content-Type: text/plain; charset="us-ascii"
+
+Hi @Matt<mailto:Matt.Sweetnam@ahead.com>,
+
+Apologize for the delayed response, was on PTO and have been focused on digging myself out at ZNA. Please see responses below and I will find time for us to continue working on this.
+
+[photo]
+
+Mpho Komanyane
+Program Delivery Director, AHEAD
+
+5137582283  |  5134764846<tel:5134764846>  |  www.ahead.com
+
+mpho.komanyane@ahead.com
+
+
+From: Matt Sweetnam <Matt.Sweetnam@ahead.com>
+Sent: Wednesday, April 24, 2024 4:24 PM
+To: Mpho Komanyane <mpho.komanyane@ahead.com>; Karthica Subramania <karthica.subramania@ahead.com>; John Knowles <john.knowles@ahead.com>; Jewel English <jewel.english@ahead.com>; Emma Birdsong <emma.birdsong@ahead.com>; Sam Gangopadhyay <soumava.gangopadhyay@ahead.com>; Will Fothergill <will.fothergill@ahead.com>
+Cc: Cooper Lutz <Cooper.Lutz@ahead.com>; Nicholas Colyer <Nick.Colyer@ahead.com>
+Subject: RE: Jira Discussion & Use Case Requirements
+
+Thanks Mpho,
+
+My two cents: Can we use Confluence<https://aheadcloudservices.atlassian.net/wiki/spaces/AMH/overview?homepageId=2607874232> rather than Sharepoint?
+MSK: I do not have a preference, and I am okay starting in confluence but think that long term if this is going to be part of our service delivery solution possibly SharePoint as everyone already has access.
+
+I went ahead and created a space<https://aheadcloudservices.atlassian.net/wiki/spaces/AMH/overview?homepageId=2607874232> in our AHEAD Confluence site but it seems only myself and john have access at the moment. Everyone can just put a ServiceNow ticket in for access to Atlassian products (octa tile) if we like this idea.  Personally, I would much prefer a confluence site to anything on SharePoint
+MSK: I will go ahead and submit a request to Confluence and we can start collaborating there then evolve as needed.
+
+Questions on the content of the App assessment templates and spreadsheets:
+
+What are the different tabs meant to signify in the spreadsheet (simple data sets)? There's a Jira set of tables and an Aptio set, what is the difference?
+MSK: Apptio data: limited to just App information, while Jira contains both App data and Jira workflow data such as Assignee, custom fields we created to manage assessment and migration etc. We can dig in more when we start defining baseline data requirements
+
+The app assessment approach we have here requires that any databases migrated in this plan are done with a VM lift and shift approach. If there's going to be a switch in database technology, even if it's on prem SQL server to hosted, then there are other things to review examined and mitigated. There's a lot of variation in stored procedures, user functions, data types, etc. and even SQL dialects are different.
+MSK: Completely agree, so my thoughts were that we follow the 80/20 rule with assumptions/recommendations on what else we think would be beneficial from a best practice perspective. Thoughts?
+
+Also, we might need to add some additional testing processes. For example, when we migrate data pipelines, we'd normally have a production parallel running to validate data in production matches exactly with the migration target over the lifecycle of the testing period.
+MSK: 100% in agreements and this also supports performance testing and any troubleshooting even post migration. One of the discussions we are currently having is regarding dual run duration after migration ie hypercare etc. Would love to get your thoughts on this as well in terms of our recommendations etc. (this has been additional scope we have been asked to work on rightsizing of server build and decommissioning timelines once migrated as there are cost benefits etc.)
+
+Love this stuff, I think this going to be incredibly useful to our delivery in the future, happy to participate.
+
+Greatly appreciate your inputs. Going to find time for us to start defining requirements and building this out and iterating.
+[photo]
+
+Matt Sweetnam
+Chief Architect, AHEAD
+
+3125068377  |  www.ahead.com<http://www.ahead.com>  |  matt.sweetnam@ahead.com<mailto:matt.sweetnam@ahead.com>
+
+
+From: Mpho Komanyane <mpho.komanyane@ahead.com<mailto:mpho.komanyane@ahead.com>>
+Sent: Wednesday, April 24, 2024 1:30 PM
+To: Karthica Subramania <karthica.subramania@ahead.com<mailto:karthica.subramania@ahead.com>>; Matt Sweetnam <Matt.Sweetnam@ahead.com<mailto:Matt.Sweetnam@ahead.com>>; John Knowles <john.knowles@ahead.com<mailto:john.knowles@ahead.com>>; Jewel English <jewel.english@ahead.com<mailto:jewel.english@ahead.com>>; Emma Birdsong <emma.birdsong@ahead.com<mailto:emma.birdsong@ahead.com>>; Sam Gangopadhyay <soumava.gangopadhyay@ahead.com<mailto:soumava.gangopadhyay@ahead.com>>; Will Fothergill <will.fothergill@ahead.com<mailto:will.fothergill@ahead.com>>
+Cc: Cooper Lutz <Cooper.Lutz@ahead.com<mailto:Cooper.Lutz@ahead.com>>; Nicholas Colyer <Nick.Colyer@ahead.com<mailto:Nick.Colyer@ahead.com>>
+Subject: RE: Jira Discussion & Use Case Requirements
+
+All,
+
+Thank you for taking the time to collaborate on the opportunity for us to templatize how Ahead delivers Migration projects. Attached are docs we discussed and next steps:
+
+1) share assessment form
+                  - DCE -draft -App Assessment Template for Validation (WIP)
+2) share sample data sets from Apptio & Jira
+                  - note that these extracts have limited data fields in each system
+3) schedule follow-up call with John & Matt
+                                    - Jira Admins: Mpho, John & Matt will do initial build out
+4) elicit additional resources to engage in template development
+                  - reporting dashboard (TBD)
+
+***(please note that some of these have client data and can't be shared outside this group).
+
+@Cooper<mailto:Cooper.Lutz@ahead.com>/@Nicholas<mailto:Nick.Colyer@ahead.com>, is there a SharePoint repository I can leverage as we work on building this template out to share requirements/documentation etc.
+
+Reach out with any questions.
+
+Best Regards,
+[photo]
+
+Mpho Komanyane
+Program Delivery Director, AHEAD
+
+5137582283  |  5134764846<tel:5134764846>  |  www.ahead.com<http://www.ahead.com>
+
+mpho.komanyane@ahead.com<mailto:mpho.komanyane@ahead.com>
+
+
+-----Original Appointment-----
+From: Mpho Komanyane
+Sent: Tuesday, April 16, 2024 3:08 PM
+To: Mpho Komanyane; Karthica Subramania; Matt Sweetnam; John Knowles; Jewel English; Emma Birdsong; Sam Gangopadhyay; Will Fothergill
+Subject: Jira Discussion & Use Case Requirements
+When: Monday, April 22, 2024 12:00 PM-1:00 PM (UTC-06:00) Central Time (US & Canada).
+Where: Microsoft Teams Meeting
+
+
+Agenda:
+- ZNA project overview
+-Jira & easyBI Demo
+-Next steps
+- Jira access/request etc.
+[photo]
+
+Mpho Komanyane
+Program Delivery Director, AHEAD
+
+5137582283  |  5134764846<tel:5134764846>  |  www.ahead.com<http://www.ahead.com>
+
+mpho.komanyane@ahead.com<mailto:mpho.komanyane@ahead.com>
+
+
+________________________________________________________________________________
+Microsoft Teams Need help?<https://aka.ms/JoinTeamsMeeting?omkt=en-US>
+Join the meeting now<https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWVjZmNiNjUtNTJiYy00ZmRlLTg3MjYtOGY2YmMzZDYxNDI0%40thread.v2/0?context=%7b%22Tid%22%3a%22b81bf60e-b038-4ae8-ba94-41478a2fb402%22%2c%22Oid%22%3a%229894cbe9-82db-4e75-939c-a67dd491b994%22%7d>
+Meeting ID: 260 713 181 856
+Passcode: ZUMwaw
+________________________________
+Dial-in by phone
++1 872-242-8670,,556745486#<tel:+18722428670,,556745486> United States, Chicago
+(833) 219-5230,,556745486#<tel:8332195230,,556745486> United States (Toll-free)
+Find a local number<https://dialin.teams.microsoft.com/130f4edb-4629-44a5-b84d-249a8cf11337?id=556745486>
+Phone conference ID: 556 745 486#
+Join on a video conferencing device
+Tenant key: thinkahead@m.webex.com<mailto:thinkahead@m.webex.com>
+Video ID: 118 350 216 0
+More info<https://www.webex.com/msteams?confid=1183502160&tenantkey=thinkahead&domain=m.webex.com>
+For organizers: Meeting options<https://teams.microsoft.com/meetingOptions/?organizerId=9894cbe9-82db-4e75-939c-a67dd491b994&tenantId=b81bf60e-b038-4ae8-ba94-41478a2fb402&threadId=19_meeting_NWVjZmNiNjUtNTJiYy00ZmRlLTg3MjYtOGY2YmMzZDYxNDI0@thread.v2&messageId=0&language=en-US> | Reset dial-in PIN<https://dialin.teams.microsoft.com/usp/pstnconferencing>
+________________________________________________________________________________
+
+
+--_000_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"ws-id AJvlOXYJ2oD4";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"ws-id EQGMmRwNgKDj";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ligatures:standardcontextual;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#467886;
+	text-decoration:underline;}
+span.me-email-text
+	{mso-style-name:me-email-text;}
+span.me-email-text-secondary
+	{mso-style-name:me-email-text-secondary;}
+span.me-email-headline
+	{mso-style-name:me-email-headline;}
+span.EmailStyle25
+	{mso-style-type:personal-reply;
+	font-family:"Aptos",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:14038963;
+	mso-list-type:hybrid;
+	mso-list-template-ids:268988218 -761745146 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Aptos",sans-serif;
+	mso-fareast-font-family:Aptos;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1144152662;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1317475870 -761745146 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Aptos",sans-serif;
+	mso-fareast-font-family:Aptos;
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#467886" vlink="#96607D" style="word-wrap:break-word">
+<div class="WordSection1">
+<p class="MsoNormal">Hi <a id="OWAAMC7A641D0345D4D5D922F930ED930D7AF" href="mailto:Matt.Sweetnam@ahead.com">
+<span style="font-family:&quot;Aptos&quot;,sans-serif;text-decoration:none">@Matt</span></a>,<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Apologize for the delayed response, was on PTO and have been focused on digging myself out at ZNA. Please see responses below and I will find time for us to continue working on this.<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr style="height:9.0pt">
+<td style="padding:.75pt .75pt .75pt .75pt;height:9.0pt"></td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="79" style="width:59.25pt;padding:0in 10.5pt 0in .75pt">
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Verdana&quot;,sans-serif;color:black;mso-ligatures:none"><img border="0" width="79" height="79" style="width:.8194in;height:.8194in" id="Picture_x0020_4" src="cid:image001.png@01DAA647.6C03FB20" alt="photo"></span><span style="font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</td>
+<td valign="top" style="border:none;border-left:solid #45668E 1.0pt;padding:0in 0in 0in 10.5pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<p style="margin:.1pt;line-height:120%"><span style="font-size:11.5pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Mpho Komanyane
+</span><span style="font-family:&quot;Verdana&quot;,sans-serif"><br>
+</span><span style="font-size:9.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Program Delivery Director, AHEAD
+</span><span style="font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="288" nowrap="" style="width:3.0in;padding:10.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:98%"><span style="font-size:7.5pt;line-height:98%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">5137582283 &nbsp;|&nbsp;
+<a href="tel:5134764846" target="_blank"><span style="color:#212121">5134764846</span></a> &nbsp;|&nbsp; www.ahead.com<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width="200" nowrap="" style="width:150.0pt;padding:4.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:98%"><span style="font-size:7.5pt;line-height:98%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">mpho.komanyane@ahead.com<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<p class="MsoNormal" style="line-height:0%"><span style="font-size:1.0pt;font-family:&quot;ws-id AJvlOXYJ2oD4&quot;,serif">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style="border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none">From:</span></b><span style="font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none"> Matt Sweetnam &lt;Matt.Sweetnam@ahead.com&gt;
+<br>
+<b>Sent:</b> Wednesday, April 24, 2024 4:24 PM<br>
+<b>To:</b> Mpho Komanyane &lt;mpho.komanyane@ahead.com&gt;; Karthica Subramania &lt;karthica.subramania@ahead.com&gt;; John Knowles &lt;john.knowles@ahead.com&gt;; Jewel English &lt;jewel.english@ahead.com&gt;; Emma Birdsong &lt;emma.birdsong@ahead.com&gt;; Sam Gangopadhyay &lt;soumava.gangopadhyay@ahead.com&gt;;
+ Will Fothergill &lt;will.fothergill@ahead.com&gt;<br>
+<b>Cc:</b> Cooper Lutz &lt;Cooper.Lutz@ahead.com&gt;; Nicholas Colyer &lt;Nick.Colyer@ahead.com&gt;<br>
+<b>Subject:</b> RE: Jira Discussion &amp; Use Case Requirements<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">Thanks Mpho,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">My two cents: Can we use <a href="https://aheadcloudservices.atlassian.net/wiki/spaces/AMH/overview?homepageId=2607874232">
+Confluence</a> rather than Sharepoint? <br>
+<span style="color:#0070C0">MSK: I do not have a preference, and I am okay starting in confluence but think that long term if this is going to be part of our service delivery solution possibly SharePoint as everyone already has access.</span><o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">I went ahead and created a <a href="https://aheadcloudservices.atlassian.net/wiki/spaces/AMH/overview?homepageId=2607874232">
+space</a> in our AHEAD Confluence site but it seems only myself and john have access at the moment. Everyone can just put a ServiceNow ticket in for access to Atlassian products (octa tile) if we like this idea.&nbsp; Personally, I would much prefer a confluence
+ site to <i>anything</i> on SharePoint<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#0070C0">MSK: I will go ahead and submit a request to Confluence and we can start collaborating there then evolve as needed.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">Questions on the content of the App assessment templates and spreadsheets:<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">What are the different tabs meant to signify in the spreadsheet (simple data sets)? There&#8217;s a Jira set of tables and an Aptio set, what is the difference?<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#0070C0">MSK: Apptio data: limited to just App information, while Jira contains both App data and Jira workflow data such as Assignee, custom fields we created to manage assessment and migration etc. We can dig in more
+ when we start defining baseline data requirements <o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">The app assessment approach we have here requires that any databases migrated in this plan are done with a VM lift and shift approach. If there&#8217;s going to be a switch in database technology, even if it&#8217;s on
+ prem SQL server to hosted, then there are other things to review examined and mitigated. There&#8217;s a lot of variation in stored procedures, user functions, data types, etc. and even SQL dialects are different.
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#0070C0">MSK: Completely agree, so my thoughts were that we follow the 80/20 rule with assumptions/recommendations on what else we think would be beneficial from a best practice perspective. Thoughts?<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">Also, we might need to add some additional testing processes. For example, when we migrate data pipelines, we&#8217;d normally have a production parallel running to validate data in production matches exactly with
+ the migration target over the lifecycle of the testing period. &nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="color:#0070C0">MSK: 100% in agreements and this also supports performance testing and any troubleshooting even post migration. One of the discussions we are currently having is regarding dual run duration after migration ie
+ hypercare etc. Would love to get your thoughts on this as well in terms of our recommendations etc. (this has been additional scope we have been asked to work on rightsizing of server build and decommissioning timelines once migrated as there are cost benefits
+ etc.)<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt">Love this stuff, I think this going to be incredibly useful to our delivery in the future, happy to participate.
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="color:#0070C0">Greatly appreciate your inputs. Going to find time for us to start defining requirements and building this out and iterating.
+<o:p></o:p></span></p>
+<div>
+<div>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr style="height:9.0pt">
+<td style="padding:.75pt .75pt .75pt .75pt;height:9.0pt"></td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="79" style="width:59.25pt;padding:0in 10.5pt 0in .75pt">
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Verdana&quot;,sans-serif;color:black;mso-ligatures:none"><img border="0" width="79" height="79" style="width:.8194in;height:.8194in" id="Picture_x0020_3" src="cid:image001.png@01DAA647.6C03FB20" alt="photo"></span><span style="font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</td>
+<td valign="top" style="border:none;border-left:solid #45668E 1.0pt;padding:0in 0in 0in 10.5pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<p style="margin:.1pt;line-height:120%"><span style="font-size:11.5pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Matt Sweetnam
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><br>
+</span><span style="font-size:9.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Chief Architect, AHEAD
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="392" nowrap="" style="width:294.0pt;padding:10.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:96%"><span style="font-size:7.5pt;line-height:96%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">3125068377 &nbsp;|&nbsp;
+<a href="http://www.ahead.com">www.ahead.com</a> &nbsp;|&nbsp; <a href="mailto:matt.sweetnam@ahead.com">
+matt.sweetnam@ahead.com</a><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<p class="MsoNormal" style="line-height:0%"><span style="font-size:1.0pt;font-family:&quot;ws-id EQGMmRwNgKDj&quot;">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="MsoNormal"><span style="font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div style="border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in 0in 0in">
+<p class="MsoNormal"><b><span style="font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none">From:</span></b><span style="font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none"> Mpho Komanyane &lt;<a href="mailto:mpho.komanyane@ahead.com">mpho.komanyane@ahead.com</a>&gt;
+<br>
+<b>Sent:</b> Wednesday, April 24, 2024 1:30 PM<br>
+<b>To:</b> Karthica Subramania &lt;<a href="mailto:karthica.subramania@ahead.com">karthica.subramania@ahead.com</a>&gt;; Matt Sweetnam &lt;<a href="mailto:Matt.Sweetnam@ahead.com">Matt.Sweetnam@ahead.com</a>&gt;; John Knowles &lt;<a href="mailto:john.knowles@ahead.com">john.knowles@ahead.com</a>&gt;;
+ Jewel English &lt;<a href="mailto:jewel.english@ahead.com">jewel.english@ahead.com</a>&gt;; Emma Birdsong &lt;<a href="mailto:emma.birdsong@ahead.com">emma.birdsong@ahead.com</a>&gt;; Sam Gangopadhyay &lt;<a href="mailto:soumava.gangopadhyay@ahead.com">soumava.gangopadhyay@ahead.com</a>&gt;;
+ Will Fothergill &lt;<a href="mailto:will.fothergill@ahead.com">will.fothergill@ahead.com</a>&gt;<br>
+<b>Cc:</b> Cooper Lutz &lt;<a href="mailto:Cooper.Lutz@ahead.com">Cooper.Lutz@ahead.com</a>&gt;; Nicholas Colyer &lt;<a href="mailto:Nick.Colyer@ahead.com">Nick.Colyer@ahead.com</a>&gt;<br>
+<b>Subject:</b> RE: Jira Discussion &amp; Use Case Requirements<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">All,<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">Thank you for taking the time to collaborate on the opportunity for us to templatize how Ahead delivers Migration projects. Attached are docs we discussed and next steps:
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><br>
+1) share assessment form<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DCE -draft -App Assessment Template for Validation (WIP)<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">2) share sample data sets from Apptio &amp; Jira<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - note that these extracts have limited data fields in each system<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">3) schedule follow-up call with John &amp; Matt
+<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Jira Admins: Mpho, John &amp; Matt will do initial build out<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">4) elicit additional resources to engage in template development<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - reporting dashboard (TBD)<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">***(please note that some of these have client data and can&#8217;t be shared outside this group).<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><a id="OWAAM3AA5D92FA11B4EBCBEE07CEDB17B3E3F" href="mailto:Cooper.Lutz@ahead.com"><span style="font-size:10.0pt;font-family:&quot;Aptos&quot;,sans-serif;text-decoration:none">@Cooper</span></a><span style="font-size:10.0pt">/</span><a id="OWAAM2C575BC980454BDFA3F79599D2CCC4CC" href="mailto:Nick.Colyer@ahead.com"><span style="font-size:10.0pt;font-family:&quot;Aptos&quot;,sans-serif;text-decoration:none">@Nicholas</span></a><span style="font-size:10.0pt">,
+ is there a SharePoint repository I can leverage as we work on building this template out to share requirements/documentation etc.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">Reach out with any questions.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span style="font-size:10.0pt">Best Regards,<o:p></o:p></span></p>
+<div>
+<div>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr style="height:9.0pt">
+<td style="padding:.75pt .75pt .75pt .75pt;height:9.0pt"></td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="79" style="width:59.25pt;padding:0in 10.5pt 0in .75pt">
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Verdana&quot;,sans-serif;color:black;mso-ligatures:none"><img border="0" width="79" height="79" style="width:.8194in;height:.8194in" id="Picture_x0020_2" src="cid:image001.png@01DAA647.6C03FB20" alt="photo"></span><span style="font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</td>
+<td valign="top" style="border:none;border-left:solid #45668E 1.0pt;padding:0in 0in 0in 10.5pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<p style="margin:.1pt;line-height:120%"><span style="font-size:11.5pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Mpho Komanyane
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><br>
+</span><span style="font-size:9.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Program Delivery Director, AHEAD
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="288" nowrap="" style="width:3.0in;padding:10.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:95%"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">5137582283 &nbsp;|&nbsp;
+</span><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="tel:5134764846" target="_blank"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">5134764846</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">
+ &nbsp;|&nbsp; </span><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="http://www.ahead.com"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif">www.ahead.com</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width="200" nowrap="" style="width:150.0pt;padding:4.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:95%"><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="mailto:mpho.komanyane@ahead.com"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif">mpho.komanyane@ahead.com</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<p class="MsoNormal" style="line-height:0%"><span style="font-size:1.0pt;font-family:&quot;ws-id AJvlOXYJ2oD4&quot;,serif">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class="MsoNormal"><span style="font-family:&quot;Calibri&quot;,sans-serif;mso-ligatures:none">-----Original Appointment-----<br>
+<b>From:</b> Mpho Komanyane <br>
+<b>Sent:</b> Tuesday, April 16, 2024 3:08 PM<br>
+<b>To:</b> Mpho Komanyane; Karthica Subramania; Matt Sweetnam; John Knowles; Jewel English; Emma Birdsong; Sam Gangopadhyay; Will Fothergill<br>
+<b>Subject:</b> Jira Discussion &amp; Use Case Requirements<br>
+<b>When:</b> Monday, April 22, 2024 12:00 PM-1:00 PM (UTC-06:00) Central Time (US &amp; Canada).<br>
+<b>Where:</b> Microsoft Teams Meeting<o:p></o:p></span></p>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Agenda:<br>
+- ZNA project overview<o:p></o:p></p>
+<p class="MsoNormal">-Jira &amp; easyBI Demo<o:p></o:p></p>
+<p class="MsoNormal">-Next steps<br>
+- Jira access/request etc.<o:p></o:p></p>
+<div>
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr style="height:9.0pt">
+<td style="padding:.75pt .75pt .75pt .75pt;height:9.0pt"></td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100.0%">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="79" style="width:59.25pt;padding:0in 10.5pt 0in .75pt">
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Verdana&quot;,sans-serif;color:black;mso-ligatures:none"><img border="0" width="79" height="79" style="width:.8194in;height:.8194in" id="Picture_x0020_1" src="cid:image001.png@01DAA647.6C03FB20" alt="photo"></span><span style="font-size:12.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+</td>
+<td valign="top" style="border:none;border-left:solid #45668E 1.0pt;padding:0in 0in 0in 10.5pt">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<p style="margin:.1pt;line-height:120%"><span style="font-size:11.5pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Mpho Komanyane
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><br>
+</span><span style="font-size:9.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif;color:#646464">Program Delivery Director, AHEAD
+</span><span style="font-size:10.0pt;line-height:120%;font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in">
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+<tbody>
+<tr>
+<td width="288" nowrap="" style="width:3.0in;padding:10.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:95%"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">5137582283 &nbsp;|&nbsp;
+</span><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="tel:5134764846" target="_blank"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">5134764846</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121">
+ &nbsp;|&nbsp; </span><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="http://www.ahead.com"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif">www.ahead.com</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width="200" nowrap="" style="width:150.0pt;padding:4.5pt 0in 0in 0in">
+<p style="margin:.75pt;line-height:95%"><span style="font-size:10.0pt;line-height:95%;font-family:&quot;Times New Roman&quot;,serif"><a href="mailto:mpho.komanyane@ahead.com"><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif">mpho.komanyane@ahead.com</span></a></span><span style="font-size:7.5pt;line-height:95%;font-family:&quot;Verdana&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<p class="MsoNormal" style="line-height:0%"><span style="font-size:1.0pt;font-family:&quot;ws-id AJvlOXYJ2oD4&quot;,serif">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style="margin-bottom:.25in;overflow:hidden">
+<p class="MsoNormal"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">________________________________________________________________________________</span><span style="font-size:12.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424;mso-ligatures:none"><o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:9.0pt">
+<p class="MsoNormal"><span class="me-email-text"><b><span style="font-size:18.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">Microsoft Teams</span></b></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+</span><a href="https://aka.ms/JoinTeamsMeeting?omkt=en-US"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">Need help?</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWVjZmNiNjUtNTJiYy00ZmRlLTg3MjYtOGY2YmMzZDYxNDI0%40thread.v2/0?context=%7b%22Tid%22%3a%22b81bf60e-b038-4ae8-ba94-41478a2fb402%22%2c%22Oid%22%3a%229894cbe9-82db-4e75-939c-a67dd491b994%22%7d" target="_blank"><b><span style="font-size:15.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">Join
+ the meeting now</span></b></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><span class="me-email-text-secondary"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">Meeting ID:
+</span></span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">260 713 181 856</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:.25in">
+<p class="MsoNormal"><span class="me-email-text-secondary"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">Passcode:
+</span></span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">ZUMwaw</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:.25in">
+<div class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<hr size="1" width="100%" align="center">
+</span></div>
+</div>
+<div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><span class="me-email-text"><b><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">Dial-in by phone</span></b></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><a href="tel:+18722428670,,556745486"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">+1 872-242-8670,,556745486#</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+</span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">United States, Chicago</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><a href="tel:8332195230,,556745486"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">(833) 219-5230,,556745486#</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+</span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">United States (Toll-free)</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><a href="https://dialin.teams.microsoft.com/130f4edb-4629-44a5-b84d-249a8cf11337?id=556745486"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">Find a local number</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+</div>
+<div style="margin-bottom:.25in">
+<p class="MsoNormal"><span class="me-email-text-secondary"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">Phone conference ID:
+</span></span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">556 745 486#</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><span class="me-email-headline"><b><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">Join on a video conferencing device</span></b></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">Tenant key:
+</span></span><a href="mailto:thinkahead@m.webex.com"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif">thinkahead@m.webex.com</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:4.5pt">
+<p class="MsoNormal"><span class="me-email-text-secondary"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">Video ID:
+</span></span><span class="me-email-text"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">118 350 216 0</span></span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:.25in">
+<p class="MsoNormal"><a href="https://www.webex.com/msteams?confid=1183502160&amp;tenantkey=thinkahead&amp;domain=m.webex.com" target="_blank"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">More info</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class="MsoNormal"><span class="me-email-text-secondary"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#616161">For organizers:
+</span></span><a href="https://teams.microsoft.com/meetingOptions/?organizerId=9894cbe9-82db-4e75-939c-a67dd491b994&amp;tenantId=b81bf60e-b038-4ae8-ba94-41478a2fb402&amp;threadId=19_meeting_NWVjZmNiNjUtNTJiYy00ZmRlLTg3MjYtOGY2YmMzZDYxNDI0@thread.v2&amp;messageId=0&amp;language=en-US" target="_blank"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">Meeting
+ options</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+</span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#D1D1D1">|</span><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+</span><a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" target="_blank"><span style="font-size:10.5pt;font-family:&quot;Segoe UI&quot;,sans-serif;color:#5B5FC7">Reset dial-in PIN</span></a><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">
+<o:p></o:p></span></p>
+</div>
+<div style="margin-bottom:.25in;overflow:hidden">
+<p class="MsoNormal"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:#242424">________________________________________________________________________________<o:p></o:p></span></p>
+</div>
+</div>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_--
+
+--_004_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=10022;
+	creation-date="Wed, 15 May 2024 02:41:06 GMT";
+	modification-date="Wed, 12 Jun 2024 16:45:43 GMT"
+Content-ID: <image001.png@01DAA647.6C03FB20>
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAIAAAAP3aGbAAAl20lEQVR42u3daXwV12H38TPbvdp3
+EAIEAoRYBEggtCDMjhAYDMYsTtLEceokftqnbp40ydPWbdJ0e5qkztosbZqkdhLXcQwOtjGY3ez7
+asDsizCLECC0696ZM6cv8JOHB6qRhHUXid/3o1dwru5o7tz/nHPmLFpa+WcEAHQHOqcAAIEFAAQW
+AAILAAgsACCwABBYAEBgAQCBBYDAAgACCwAILAAEFgAQWABAYAEgsACAwAIAAgsAgQUABBYAEFgA
+CCwAILAAgMACQGABAIEFAAQWAAILAAgsAAQWABBYAEBgASCwAIDAAgACCwCBBQAEFgAQWAAILAAg
+sACAwAJAYAEAgQUABBYAAgsACCwAILAAEFgAQGABAIEFgMACAAILAAgsAAQWABBYAEBgASCwAIDA
+AkBgAQCBBQAEFgACCwAILAAgsAAQWABAYAEAgQWAwAIAAgsACCwABBYAEFgAQGABILAAgMACAAIL
+AIEFAAQWABBYAAgsACCwAIDAAkBgAQCBBQAEFgACCwAILAAEFgAQWABAYAEgsACAwAIAAgsAgQUA
+BBYAEFgACCwAILAAgMACQGABAIEFAAQWAAILAAgsACCwABBYAEBgAQCBBYDAAgACCwAILAAEFgAQ
+WABAYAEgsACAwAJAYAEAgQUABBYAAgsACCwAILAAEFgAQGABAIEFgMACAAILAAgsAAQWABBYAEBg
+ASCwAIDAAgACCwCBBQAEFgAQWAAILAAgsACAwAJAYAEAgQUABBYAAgsACCwABBYAEFgAQGABILAA
+gMACAAILAIEFAAQWABBYAAgsACCwAIDAAkBgAQCBBQAEFgACCwAILAAgsAAQWABAYAEAgQWgWzO7
+76ErJVzlKiV0TdN1LToOSSklNF2LyNG4SmlCaJrGZf3ApOsqJTRNGLoeNde5UqrzL9OE3hOvhG4Z
+WEqJoG1bptk7LdkyjYamllt1jYaum6YRqUMK2o4SIiHWbxpGY3Or7UifZYYnRl1XBR3HNPSEuFgp
+ZVNLQCnh933UT1aTUgkhNE1E9rJXQlOuEpowjFB/gpqmZaQmxsX4Wlrtmto6pYTPMiN7kQsh4mL9
+fp8lOplZ0nWbWlqFEq5SrlLKVbquGYau63q3DjKzG6aVcl21YHrxM09MHzaor2UaDY0tm/e//y8v
+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
+YlyMEKKhuVVK+REP4O6L6kEucvWhOw8lDF03dF3vdHWPwLrrRq6UElrEnv1H/AC6gTAMSevSk3/n
+gWD4t1C/OyaE4IoKWQM8kmGpiciGfcQPoDvc0brZ+YlgVH14AFxRIT29nAIABBYAEFgACCwAILAA
+gMACQGABAIEFAAQWAAILAAgsACCwABBYAEBgAQCBBYDAAgACCwAILAAEFgAQWABAYAEgsACAwAIA
+AgsAgQUABBYAEFgACCwAILAAEFgAQGABAIEFgMACAAILAAgsAAQWABBYAEBgASCwAIDAAgACCwCB
+BQAEFgAQWAAILAAgsACAwAJAYAEAgQUABBYAAgsACCwAILAAEFgAQGABAIEFgMACAAILAIEFAAQW
+ABBYAAgsACCwAIDAAkBgAQCBBQAEFgACCwAILAAgsAAQWABAYAEAgQWAwAIAAgsACCwABBYAEFgA
+QGABILAAgMACAAILAIEFAAQWABBYAAgsACCwABBYAEBgAQCBBYDAAgACCwAILAAEFgAQWABAYAEg
+sACAwAIAAgsAgQUABBYAEFgACCwAILAAgMACQGABAIEFAAQWAAILAAgsACCwABBYAEBgAQCBBYDA
+AgACCwCBBQAEFgAQWAAILAAgsACAwAJAYAEAgQUABBYAAgsACCwAILAAEFgAQGABAIEFgMACAAIL
+AAgsAAQWABBYAEBgASCwAIDAAgACCwCBBQAEFgAQWAAILAAgsAAQWABAYAEAgQWAwAIAAgsACCwA
+BBYAEFgAQGABILAAgMACAAILAIEFAAQWABBYAAgsACCwAMDTfwGBoWeX0sVxtwAAAABJRU5ErkJg
+gg==
+
+--_004_CH0PR10MB529112266C3C49D21B62324F9DEC2CH0PR10MB5291namp_--
